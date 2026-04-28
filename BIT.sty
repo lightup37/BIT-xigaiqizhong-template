@@ -206,15 +206,10 @@
 \fancyhfoffset[E,O]{0pt}
 }
 
-\newenvironment{cnabstract}[1]{
-	\def \cnkeyword {#1}
-	\clearpage
-	\thispagestyle{empty}
-	%\phantomsection
-	%\addcontentsline{toc}{section}{摘要}
-{\zihao{-4}\song\bfseries [摘要]\;\;}
-}{\\
-
-{\song \zihao{-4} \bfseries [关键词]\;\;}\cnkeyword
-	%\clearpage
+\newenvironment{cnabstract}[1]{%
+    \def\cnkeyword{#1}%
+    \par{\zihao{-4}\song\bfseries [摘要]\;\;}%
+    \ignorespaces
+}{%
+    \par{\song\zihao{-4}\bfseries [关键词]\;\;}\cnkeyword
 }
