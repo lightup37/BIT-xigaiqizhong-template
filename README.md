@@ -4,4 +4,6 @@
 
 ## 使用方法
 
-下载整个库后上传到 overleaf 上或在本地使用
+下载整个库后上传到 overleaf 上或在本地使用。
+
+注意要将 overleaf 的编译器选择为 xelatex。
